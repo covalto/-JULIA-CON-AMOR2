@@ -1,0 +1,506 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor{
+ width: 412px;
+ width: 100%;
+ background-image: linear-gradient(180deg, #ffff31 0, #ffff2c 8.33%, #ffff2e 16.67%, #faff36 25%, #d6ff40 33.33%, #b0ff4a 41.67%, #89f253 50%, #60e35b 58.33%, #2cd563 66.67%, #00c96c 75%, #00c075 83.33%, #00b87f 91.67%, #00b289 100%);
+}
+
+.contedenor__caja-vinculos{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: gray;
+}
+
+.contenedor__vinculo1{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.contenedor__vinculo1:hover{
+    text-shadow: 0 5px 10px black;
+}
+
+.contenedor__caja-interna-vinculo{
+    padding: 10px 5px 0 5px;
+    background-color: black;
+    position: relative;
+    left: 130px;
+}
+
+.contenedor__caja-interna-vinculo:hover{
+    background-color: transparent;
+}
+
+.contenedor__vinculo2{
+    color: #fff;
+
+}
+
+.container__logo , .logo{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    
+    
+}
+
+.contenedor__header{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.contenedor__nav{
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    padding: 10px;
+    display: flex;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.contenedor__nav-link{
+    margin: auto;
+    color: #000;
+}
+
+.contenedor__nav-link:hover{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.contenedor__nav-lista{
+    width: 330px;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+
+    
+}
+
+.contenedor__nav-lista a, li{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+.contenedor__caja-donar{
+    position: absolute;
+    top: 350px;
+    width: 300px;
+    color: #fff;
+    z-index: 5;
+   
+}
+
+.contenedor__caja-donar h1, p{
+    margin: 7px 0 7px 5px;
+}
+
+.contenedor__caja-botones{
+    display: flex;
+    
+}
+.contenedor__caja-botones > a{
+    background-color: #fff;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 1em;
+    border: none;
+    
+}
+
+.contenedor__caja-botones > .btn1{
+    animation: cambio 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes cambio {
+    from{
+        background-color: #60e35b;
+        
+        color: #fff;
+    }
+
+    to{
+        background-color: #faff36;
+        color: #000;
+    }
+}
+
+
+
+div#slider { 
+    overflow: hidden; 
+
+    
+} /* las imágenes no van a salir del márgen de la pantalla*/
+
+div#slider  img { 
+    width: 20%;
+    float: left; 
+}
+
+div#slider figure { 
+  position: relative;
+  display: flex;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite ;
+   /*el movimiento se va a mantener de forma indefinida -infinito-*/
+}
+
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+
+
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    75%{ margin-left: -300%;}
+    100%{margin-left: -300%;}
+    
+}
+
+.contenedor__tarjetas{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    align-content: center;
+    justify-content: center;
+}
+.contenedor__tarjetas > div{
+    width: 200px;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 3em;
+    transition: backdrop-filter 1s, background 1s ;
+}
+
+
+.contenedor__tarjetas  > div:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 4px 3px black;
+    padding: 20px;
+}
+
+div > span{
+    display: none;
+}
+
+div:hover span{
+    display: block;
+}
+
+.contenedor__vinculo{
+    width: 90%;
+    margin: 40px auto 10px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor__vinculo > h3 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.contenedor__vinculo > p{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+}
+
+.contenedor__footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+}
+
+
+
+.contenedor__footer-redes > h3 , .redes{
+    margin: 10px 0 0 10px;
+    padding: 0;
+    
+}
+.redes > li {
+    margin-bottom: 20px;
+} 
+
+.redes > li a{
+    margin-left: 8px;
+    color: #fff;
+    
+}
+
+
+
+@media screen and (min-width:800px) {
+    .contenedor__caja-interna-vinculo{
+        left: 970px;
+    }
+
+    .container__logo , .logo{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        position: relative;
+        bottom: 10px;
+        left: 5px;
+    }
+
+    .contenedor__nav{
+        width: 30%;
+        height: 60px;
+        position: relative;
+        top: 5px;
+        justify-content: flex-end;
+        left: 750px;
+        background: none;
+    }
+
+    .contenedor__nav-link{
+        color: #fff;
+    }
+
+    .contenedor__header{
+        height: 100px;
+        display: flex;
+
+    }
+
+    div#slider{
+        width: 70%;
+        margin: 10px auto;
+
+        box-shadow: 10px 10px 15px ;
+    }
+
+    
+
+
+
+
+    .contenedor__caja-donar{
+    top: 530px;
+    }
+
+    .contenedor__caja-donar h1{
+        font-size: 35px;
+    }
+
+    .contenedor__tarjetas{
+    width: 70%;
+    display: grid;
+    margin: 30px auto;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    grid-template-columns: 31.8% 31.8% 31.8%;
+    grid-template-rows: 300px 300px;
+    grid-gap: 20px;
+    
+}
+
+.contenedor__tarjetas div{
+    border-radius: 3em;
+    height: 280px;
+    transition: backdrop-filter 1s, background 1s ;    
+}
+
+
+
+ .contenedor__tarjetas div > img{
+ position: relative;
+ 
+ left: 5px;
+}
+
+ .contendenor__tarjetas div > p{
+ position: relative;
+ top: 10%;
+ text-align: center;
+ margin-top: 20px;
+ font-display: 40px;
+ 
+ }
+
+
+.contenedor__footer-redes{
+    width: 290px;
+    height: 280px;
+    position: relative;
+    top: 10px;
+    margin: 0px 30px 0 30px;
+    
+
+
+}
+.contenedor__footer-redes > h3{ 
+    margin-bottom: 20px;  
+    font-size: 25px;
+    color: white;
+    
+}
+.contenedor__footer-redes li{
+    margin: 10px 5px 40px 10px;
+    
+}
+.contenedor__footer-redes li > img{
+   margin-left: 40px;
+
+}
+
+.contenedor__footer-redes  li a{
+    font-size: 20px;
+    color: orange;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+
+.contenedor__footer-ubicacion{
+    width: 20%;
+    height: 250px;
+    position: relative;
+    top: 15px;
+    left: 260px;
+    
+}
+
+.contenedor__footer-ubicacion h3{
+    font-size: 25px;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.contenedor__footer-ubicacion p{
+    margin: 20px;
+    color: orange;
+}
+
+.contenedor__footer-ubicacion img{
+    margin: 40px 0 0 50px;
+}
+
+.contenedor__footer-colaboracion{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    left: 380px;
+    color: #fff;
+    
+    
+}
+ 
+.contenedor__footer-colaboracion h3{
+    font-size: 25px;
+
+}
+
+.contenedor__footer-colaboracion p{
+    margin-top: 100px;
+    color: orange;
+}
+ 
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor .contedenor__caja-vinculos { 
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .contendenor__tarjetas {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .contenedor__caja-botones {
+        grid-column: 1 / -1;
+    } 
+
+    .contenedor .contenedor__caja-donar {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .contenedor__footer {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    }
+
+    .contenedor {
+        display: block;
+    }
+
+    .container__logo .contenedor__nav-link .contenedor__nav-lista {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        background: #2f2f2f;
+        height: 100%;
+        transform: translateX(-400px);
+        padding: 30px;
+        opacity: .9;
+        transition: transform .5s ease-in-out;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .contendenor__tarjetas .contenedor__nav .contenedor__tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .container__logo .contenedor__caja-donar .contendenor__tarjetas .musica .contenedor__footer img {
+        height: 270px;
+    }
+    
+    .contenedor__nav .contenedor__nav-link:hover .contenedor__nav-lista {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .contenedor__nav-link .contenedor__nav-link:hover {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

@@ -1,0 +1,373 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor{
+ width: 100%;
+ height: 1323px;
+ background-image: linear-gradient(180deg, #ffff31 0, #ffff2c 8.33%, #ffff2e 16.67%, #faff36 25%, #d6ff40 33.33%, #b0ff4a 41.67%, #89f253 50%, #60e35b 58.33%, #2cd563 66.67%, #00c96c 75%, #00c075 83.33%, #00b87f 91.67%, #00b289 100%);
+ background-size: cover;
+}
+
+
+.contedenor__caja-vinculos{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: gray;
+}
+
+.contenedor__vinculo1{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.contenedor__vinculo1:hover{
+    text-shadow: 0 5px 10px black;
+}
+
+.contenedor__caja-interna-vinculo{
+    padding: 10px 5px 0 5px;
+    background-color: black;
+    position: relative;
+    left: 130px;
+}
+
+.contenedor__caja-interna-vinculo:hover{
+    background-color: transparent;
+}
+
+.contenedor__vinculo2{
+    color: #fff;
+
+}
+
+.container__logo , .logo{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    
+    
+}
+
+.contenedor__header{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+   
+    
+}
+
+.contenedor__nav{
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    padding: 10px;
+    display: flex;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.contenedor__nav-link{
+    margin: 0 auto;
+    color: #000;
+}
+
+.contenedor__nav-link:hover{
+    background-color: black;
+    color: #fff;
+    padding: 3px;
+}
+
+.contenedor__nav-lista{
+    width: 330px;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+
+    
+}
+
+.contenedor__nav-lista a, li{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contenedor__nav-link:hover .contenedor__nav-lista{
+    display: block;
+    
+
+}
+
+/*---- contenido de donaciones---------*/
+
+
+.containedor__donacion{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    
+    
+
+    
+}
+
+.containedor__donacion  h1 , .title__donar{
+    text-shadow: 5px 7px 9px black;
+    color: white;
+
+}
+
+.containedor__donacion  hr{
+    height: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.contenedor__formulario{
+    width: 80%;
+    height: 300px;
+    margin: inherit;
+    
+}
+
+.contenedor__input{
+    margin: 20px;
+}
+
+.contenedor__input label{
+    color: #fff;
+    font-size: 1.5em;
+}
+.contenedor__input input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 4px 5px 10px;
+}
+
+.correo{
+    position: relative;
+    left: 5px;
+}
+
+.contenedor__btn{
+    position: relative;
+    top: 20px;
+    display: flex;
+    
+}
+
+.contenedor__btn  > button , #borrar{
+    width: 10rem;
+    padding: .5em;
+    border: none;
+    margin: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor__btn  > button:hover , #borrar:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.contenedor__formulario-2{
+    height: 330px;
+    padding-top: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor__formulario-2 > h3{
+    font-size: 25px;
+
+}
+
+.caja-donar{
+    width: 50%;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+
+}
+
+.caja-donar input{
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.envio-dinero{
+    position: relative;
+    top: 4rem;
+}
+
+.envio-dinero button{
+    width: 9rem;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.envio-dinero button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+footer{
+    
+    position: relative;
+    top: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #000;
+    color: orange;
+}
+
+footer > div{
+   
+    text-align: center;
+
+}
+
+.contenedor__footer-redes .redes{
+    padding: 0;
+}
+
+.redes li {
+  width: 150px;  
+  margin: 30px auto;
+  
+}
+
+.redes li a{
+   position: relative;
+   bottom: 8px;
+   margin-left: 1em;
+   color: orange;
+   
+}
+.redes li .img3{
+    transform: translateX(-10px);
+}
+
+.contenedor__footer-ubicacion p{
+    margin-top: 2em;
+}
+
+.contenedor__footer-ubicacion #home{
+    margin-top: 30px;
+}
+
+.contenedor__footer-colaboracion .footer--p{
+    margin-top: 7em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenedor__caja-interna-vinculo{
+      left: 970px;
+    }
+
+
+    .container__logo , .logo{
+        margin: 0;
+        left: 15px;
+    }
+
+    .contenedor__nav{
+        width: 50%;
+        top: 80px;
+        left: 650px;
+        background: none;
+
+    }
+
+    .contenedor__nav .contenedor__nav-link{
+        color: #fff;
+        
+    }
+    .contenedor__nav .contenedor__nav-link:hover{
+        background-color: #fff;
+        color: black;
+    }
+
+    .containedor__donacion h1{
+        font-size: 45px;
+        transform: translateY(-40px);
+    }
+
+    .containedor__donacion > h3{
+        font-size: 1.5em;
+    }
+
+    .contenedor__formulario{
+    width: 50%;
+    display: inline-block;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    right: 330px;
+    
+    }
+
+
+    .contenedor__input{
+    width: 50%;
+    display: inline-block;
+        margin: 20px 0 20px 20px;
+    transform: translateX(-143px);
+    }
+
+    .contenedor__formulario-2{
+    width: 50%;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    left: 330px;
+    bottom: 350px;
+    padding-top: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    top: -100px;
+}
+
+.contenedor{
+    background-image: url(donaciones.jpg);
+}
+
+}
+
+.bad{
+    background-color: red;
+    font-size: 45px;
+}
+
+
